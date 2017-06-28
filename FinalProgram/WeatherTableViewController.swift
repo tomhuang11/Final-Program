@@ -74,8 +74,14 @@ class WeatherTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "weathercell", for: indexPath) as! WeatherTableViewCell
         
         cell.City?.text = dataArray[indexPath.row]["locationName"] as? String
-        cell.daybegin?.text = dataArray[indexPath.row]["startTime"] as? String
-        cell.dayend?.text = dataArray[indexPath.row]["endTime"] as? String
+        let tmpdaybegin = (dataArray[indexPath.row]["startTime"] as? String)?.components(separatedBy: "T")
+        let tmpdaybegintime = tmpdaybegin?[1].components(separatedBy: ":")
+        cell.daybegin?.text = tmpdaybegin?[0]
+        cell.begintime?.text = (tmpdaybegintime?[0])! + ":00"
+        let tmpdayend = (dataArray[indexPath.row]["endTime"] as? String)?.components(separatedBy: "T")
+        let tmpdayendtime  = tmpdayend?[1].components(separatedBy: ":")
+        cell.dayend?.text = tmpdayend?[0]
+        cell.endtime?.text = (tmpdayendtime?[0])! + ":00"
         cell.weatherdescription?.text = dataArray[indexPath.row]["parameterName1"] as? String
         cell.lowtem?.text = dataArray[indexPath.row]["parameterName3"] as? String
         cell.hightem?.text = dataArray[indexPath.row]["parameterName2"] as? String

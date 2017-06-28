@@ -443,7 +443,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="daybegin" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NvO-T3-bPH">
-                                            <rect key="frame" x="146" y="8" width="170" height="21"/>
+                                            <rect key="frame" x="146" y="8" width="111" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -485,7 +485,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dayend" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3J-Fd-wO0">
-                                            <rect key="frame" x="146" y="66" width="170" height="21"/>
+                                            <rect key="frame" x="146" y="66" width="111" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -498,12 +498,28 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="begintime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2NJ-UC-gpW">
+                                            <rect key="frame" x="270" y="8" width="93" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="endtime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pe0-id-An7">
+                                            <rect key="frame" x="270" y="66" width="93" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="City" destination="5NC-M0-jhy" id="f6E-00-Aau"/>
+                                    <outlet property="begintime" destination="2NJ-UC-gpW" id="aDL-5K-0J9"/>
                                     <outlet property="daybegin" destination="NvO-T3-bPH" id="bWN-I5-Bqf"/>
                                     <outlet property="dayend" destination="b3J-Fd-wO0" id="vfR-1e-ON7"/>
+                                    <outlet property="endtime" destination="Pe0-id-An7" id="27m-zv-txn"/>
                                     <outlet property="hightem" destination="IKb-2D-M2c" id="mbP-pg-88N"/>
                                     <outlet property="lowtem" destination="66Y-u1-474" id="AhL-U7-MlX"/>
                                     <outlet property="weatherdescription" destination="2A8-j1-rnQ" id="k7k-T4-Z8l"/>

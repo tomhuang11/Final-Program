@@ -60,7 +60,13 @@ class blogTableViewController: UITableViewController {
         let docUrls = fileManager.urls(for: .documentDirectory, in: .userDomainMask)
         let docUrl = docUrls.first
         let url = docUrl?.appendingPathComponent("my.txt")
-        blog = NSArray(contentsOf: url!) as! [Dictionary<String, String>]
+        let array = NSArray(contentsOf: url!)
+        print(array)
+        
+        if array != nil{
+            blog = NSArray(contentsOf: url!) as! [Dictionary<String, String>]
+        }
+        
         
         
         

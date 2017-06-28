@@ -10,6 +10,8 @@ import UIKit
 
 class WeatherTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var endtime: UILabel!
+    @IBOutlet weak var begintime: UILabel!
     @IBOutlet weak var City: UILabel!
     @IBOutlet weak var daybegin: UILabel!
     @IBOutlet weak var dayend: UILabel!
